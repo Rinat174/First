@@ -1,4 +1,4 @@
-//
+
 //  main.swift
 //  FirstTask
 //
@@ -41,13 +41,7 @@ print("Периметр равен: \(perimetr)")
 
 // Задание 3
 
-
 let years =  5
-var abc = "123"
-
-let chislo = Int  (abc)
-
-
 
 print("Введите сумму вклада")
 var readLine1 = readLine()
