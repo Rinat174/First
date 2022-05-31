@@ -53,36 +53,40 @@ print("Введите сумму вклада")
 var readLine1 = readLine()
 print("Введите годовой процент")
 let readLine2  = readLine()
-var proc = 0
-var contribution = 0
+var proc: Double = 0
+var contribution: Double = 0
 
-if (readLine1 != nil)
+if let myVklad: String = readLine1
 {
-    print (readLine1)
-    var contribution = Double(readLine1!)
+    contribution = Double(myVklad)!
 }
 else
 {
     print ("Не введена сумма вклада")
-    RETURN;
-    
+
 }
 
-if (readLine2! != nil){
+if (readLine2 != nil) {
     
-    let proc = Double(readLine2!)
+    let tempProc = Double(readLine2!)
+    
+    if  let doubleProc = tempProc {
+        proc = doubleProc
+    }
+    else {
+        print ("Введен не верный процент")
+    }
     
 }
 else{
     
     print("Не введен процент вклада")
-    RETURN;
 }
 
 print("Сумма вклада изначально \(contribution)")
 
 for _ in 0 ..< years {
-    contribution = contribution +  ((proc/100) + 1)
+    contribution = contribution + contribution * (proc/100)
     
 }
 
