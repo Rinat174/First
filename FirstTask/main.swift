@@ -86,9 +86,3 @@ for _ in 0 ..< years {
 print("Сумма вклада равна: \(contribution) " )
         
         
-
-
-
-
-
-
