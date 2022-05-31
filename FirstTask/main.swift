@@ -2,8 +2,7 @@
 //  main.swift
 //  FirstTask
 //  Created by Сайфуллин Ринат on 29.05.2022.
-
-
+//
 import Foundation
 
 // Задание 1
@@ -23,14 +22,9 @@ print("Результат = " +  String(result))
 
 let katet1: Double = 5
 let katet2: Double = 7
-
 let s: Double = (1/2) * (katet1 * katet2)
-
 print ("Площадь треугольника равна: " + String(s))
-
 let gipotenusa: Double =  sqrt((katet1 * 2  + katet2 * 2))
-
-
 print("Гипотенуза равна: " + String(gipotenusa))
 
 let perimetr: Double = katet1 + katet2 + gipotenusa
@@ -41,7 +35,6 @@ print("Периметр равен: \(perimetr)")
 // Задание 3
 
 let years =  5
-
 print("Введите сумму вклада")
 var readLine1 = readLine()
 print("Введите годовой процент")
@@ -58,7 +51,6 @@ else
     print ("Не введена сумма вклада")
 
 }
-
 if (readLine2 != nil) {
     
     let tempProc = Double(readLine2!)
@@ -69,20 +61,25 @@ if (readLine2 != nil) {
     else {
         print ("Введен не верный процент")
     }
-    
+
 }
 else{
     
     print("Не введен процент вклада")
 }
-
 print("Сумма вклада изначально \(contribution)")
 
 for _ in 0 ..< years {
     contribution = contribution + contribution * (proc/100)
     
 }
-
 print("Сумма вклада равна: \(contribution) " )
         
         
+
+
+
+
+
+
+
